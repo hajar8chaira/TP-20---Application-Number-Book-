@@ -11,8 +11,6 @@ Ce laboratoire vise a concevoir et a implementer une solution complete d'interac
 
 ## 2. Demonstration
 
-### Etape par etape du scenario de test
-
 | 1. Structure de la base de données sous phpMyAdmin | 2.  Contacts enregistrés sur l'appareil Android | 3. Interface graphique initiale de l'application |
 | :---: | :---: | :---: |
 | ![Permission](img-lab20-dev/1.png) | ![Chargement](img-lab20-dev/2.png) | ![Synchro](img-lab20-dev/3.png) |
