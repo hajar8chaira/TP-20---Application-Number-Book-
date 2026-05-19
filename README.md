@@ -4,12 +4,12 @@
 
 ---
 
-## 1. Objectif pedagogique
+## 1. Objectif 
 Ce laboratoire vise a concevoir et a implementer une solution complete d'interaction systeme et de communication client-serveur. L'application mobile lit les contacts locaux du systeme d'exploitation Android, les met en forme dans un RecyclerView personnalise, puis effectue une synchronisation reseau en convertissant les objets en requetes JSON via Retrofit pour les enregistrer physiquement dans une base de donnees distante MySQL. Une fonctionnalite de recherche en ligne permet ensuite d'interroger cette base distante et de mettre a jour dynamiquement la liste d'affichage.
 
 ---
 
-## 2. Apercu visuel de l'interface et Preuves de validation
+## 2. Demonstration
 
 ### Etape par etape du scenario de test
 
