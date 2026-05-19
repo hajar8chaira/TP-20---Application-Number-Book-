@@ -13,23 +13,23 @@ Ce laboratoire vise a concevoir et a implementer une solution complete d'interac
 
 ### Etape par etape du scenario de test
 
-| 1. Demande de Permission | 2. Contacts locaux charges | 3. Lancement de la Synchro |
+| 1. Structure de la base de données sous phpMyAdmin | 2.  Contacts enregistrés sur l'appareil Android | 3. Interface graphique initiale de l'application |
 | :---: | :---: | :---: |
 | ![Permission](img-lab20-dev/1.png) | ![Chargement](img-lab20-dev/2.png) | ![Synchro](img-lab20-dev/3.png) |
-| Dialogue natif demandant l'acces aux contacts lors du premier clic | Chargement reussi des contacts de l'appareil dans des cartes roses | Toast confirmant l'envoi de la requete asynchrone HTTP POST |
+| : l'interface d'administration phpMyAdmin montre la création et la présence physique de la base de données numberbook et de sa table contact, prêtes à recevoir les données synchronisées. |  montre la liste des contacts enregistrés localement dans l'application native "Contacts" de l'émulateur  | montrant les boutons d'action et le champ de saisie avant le chargement des données.T |
 
-| 4. Filtrage et Recherche | 5. Mode Paysage Adaptatif | 6. Preuve SQL (phpMyAdmin) |
+| 4. Filtrage et Recherche | 5. Affichage complet des contacts chargés | 6. Preuve SQL (phpMyAdmin) |
 | :---: | :---: | :---: |
-| ![Recherche](img-lab20-dev/4.png) | ![Mode Paysage](img-lab20-dev/5.png) | ![Base SQL](img-lab20-dev/6-preuve-db.png) |
-| Liste mise a jour dynamiquement apres requête GET de recherche | Ergonomie optimale et scroll complet de toute l'application | Insertion physique reussie dans la table MySQL distante |
+| ![Recherche](img-lab20-dev/5.png) | ![Mode Paysage](img-lab20-dev/4.png) | ![Base SQL](img-lab20-dev/6-preuve-db.png) |
+| Liste mise a jour dynamiquement apres requête GET de recherche | montre l'application NumberBook après avoir chargé et affiché l'ensemble des fiches contacts de l'appareil. Les contacts sont disposés dans des cartes rose pastel avec des badges circulaires pour chaque initiale. | Insertion physique reussie dans la table MySQL distante |
 
 ---
 
 ## 3. Demonstration Video
-La video suivante certifie la validation de l'application : l'autorisation d'acces aux contacts systeme, la recuperation locale instantanee, la transmission par requetes POST asynchrones avec Gson, le stockage dans phpMyAdmin, et la recherche en ligne.
 
-<video src="img-lab20-dev/video.mp4" controls="controls" style="max-width: 100%;">
-</video>
+
+[<video src="img-lab20-dev/video.mp4" controls="controls" style="max-width: 100%;">
+</video>](https://github.com/user-attachments/assets/ddd05862-dfa1-4d39-932e-a5fbdba5f8de)
 
 ---
 
@@ -52,11 +52,4 @@ Programmation du controle de flux dans `MainActivity` : verification dynamique d
 
 ---
 
-## 5. Competences acquises
-* **Consommation d'API Web (Retrofit & GSON) :** Structuration et execution de requetes HTTP GET et POST asynchrones robustes.
-* **Integrite du Systeme Android (Permissions & ContentProvider) :** Lecture securisee de bases de donnees internes de l'appareil avec gestion du consentement utilisateur.
-* **Design Graphique Responsive (UX/UI) :** Creation d'affichages fluides a base de cartes materialises adaptatives en orientation portrait et paysage.
-* **Architecture Client-Serveur :** Comprehension globale des protocoles de dialogue de donnees standardisees (JSON) entre un terminal mobile et un serveur de persistance distant.
 
----
-**Rapport de TP - 2026**
